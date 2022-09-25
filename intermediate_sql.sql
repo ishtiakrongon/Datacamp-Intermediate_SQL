@@ -97,6 +97,9 @@ WHERE (release_year = 1990 OR release_year = 1999)
 -- Filter films with more than $2,000,000 gross
 	AND (gross > 2000000);	
 
-
+-- Select the title and release_year for films released between 1990 and 2000
+SELECT title, release_year
+FROM films
+WHERE release_year BETWEEN 1990 AND 2000;
 
 
