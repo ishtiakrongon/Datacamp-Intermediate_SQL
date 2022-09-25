@@ -33,4 +33,20 @@ FROM films;
 
 -- CHAPTER 2 | FILTERING RECORDS
 
+-- Select film_ids and imdb_score with an imdb_score over 7.0
+
+SELECT film_id, imdb_score
+FROM reviews
+WHERE imdb_score > 7.0;
+
+
+-- Select film_ids and imdb_score for ten records with less than 7.0 
+
+SELECT film_id, imdb_score
+FROM reviews
+WHERE imdb_score < 7.0
+LIMIT 10;
+
+
+
 
