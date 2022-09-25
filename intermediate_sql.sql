@@ -48,3 +48,9 @@ WHERE imdb_score < 7.0
 LIMIT 10;
 
 
+-- Count the records with at least 100,000 votes
+
+SELECT COUNT(num_votes) AS films_over_100k_votes
+FROM reviews
+WHERE num_votes >= 100000;
+
