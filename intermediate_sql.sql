@@ -155,3 +155,26 @@ FROM films
 WHERE certification IN ('NC-17', 'R')
     AND language IN ('English', 'Italian', 'Greek');
 	
+-- Count the unique titles
+SELECT COUNT(DISTINCT title) AS nineties_english_films_for_teens
+FROM films
+-- Filter to release_years to between 1990 and 1999
+WHERE release_year BETWEEN 1990 AND 1999
+-- Filter to English-language films
+	AND language = 'English'
+-- Narrow it down to G, PG, and PG-13 certifications
+	AND certification IN ('G', 'PG', 'PG-13');
+	
+	
+-- List all film titles with missing budgets
+
+SELECT title AS no_budget_info
+FROM films
+WHERE budget IS NULL;
+
+
+-- Count the number of films we have language data for
+
+SELECT COUNT(*) AS count_language_known
+FROM films
+WHERE language IS NOT NULL;
