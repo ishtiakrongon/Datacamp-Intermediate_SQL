@@ -124,3 +124,23 @@ FROM people
 WHERE name LIKE 'B%';
 
 
+SELECT name
+FROM people
+-- Select the names that have r as the second letter
+WHERE name LIKE '_r%';
+
+
+SELECT name
+FROM people
+-- Select names that don't start with A
+WHERE name NOT LIKE 'A%';
+
+
+-- Find the title and release_year for all films over two hours in length released in 1990 and 2000
+SELECT title, release_year
+FROM films
+WHERE duration > 120
+    AND release_year IN (1990, 2000);
+	
+
+
