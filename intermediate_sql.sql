@@ -95,7 +95,7 @@ FROM films
 WHERE (release_year = 1990 OR release_year = 1999)
 	AND (language = 'English' OR language = 'Spanish')
 -- Filter films with more than $2,000,000 gross
-	AND (gross <= 2000000);	
+	AND (gross > 2000000);	
 
 
 
