@@ -103,3 +103,18 @@ FROM films
 WHERE release_year BETWEEN 1990 AND 2000;
 
 
+SELECT title, release_year
+FROM films
+WHERE release_year BETWEEN 1990 AND 2000
+-- Narrow down your query to films with budgets > $100 million
+	AND budget > 100000000;
+	
+
+-- Restrict the query only for Spanish Language
+SELECT title, release_year
+FROM films
+WHERE release_year BETWEEN 1990 AND 2000
+	AND budget > 100000000
+-- Restrict the query to only Spanish-language films
+	AND language = 'Spanish';
+	
