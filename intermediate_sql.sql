@@ -48,5 +48,3 @@ WHERE imdb_score < 7.0
 LIMIT 10;
 
 
-
-
