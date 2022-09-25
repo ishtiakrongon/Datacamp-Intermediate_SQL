@@ -60,3 +60,10 @@ WHERE num_votes >= 100000;
 SELECT COUNT(language) AS count_spanish
 FROM films
 WHERE language = 'Spanish';
+
+-- Select the title and release_year for all German-language films released before 2000
+
+SELECT title, release_year
+FROM films
+WHERE language = 'German'
+	AND release_year < 2000;
