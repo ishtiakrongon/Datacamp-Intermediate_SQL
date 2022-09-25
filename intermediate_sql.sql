@@ -142,5 +142,16 @@ FROM films
 WHERE duration > 120
     AND release_year IN (1990, 2000);
 	
+-- Find the title and language of all films in English, Spanish, and French
+SELECT title, language
+FROM films
+WHERE language IN ('English', 'Spanish', 'French');
 
 
+-- Find the title, certification, and language all films certified NC-17 or R that are in English, Italian, or Greek
+
+SELECT title, certification, language
+FROM films
+WHERE certification IN ('NC-17', 'R')
+    AND language IN ('English', 'Italian', 'Greek');
+	
