@@ -118,3 +118,9 @@ WHERE release_year BETWEEN 1990 AND 2000
 -- Restrict the query to only Spanish-language films
 	AND language = 'Spanish';
 	
+-- Select the names that start with B
+SELECT name
+FROM people
+WHERE name LIKE 'B%';
+
+
