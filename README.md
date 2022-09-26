@@ -8,12 +8,3 @@
  - How to sort and group data
  - How to present the data cleanly using tools such as rounding and aliasing
 
-
----
-
-## Course Content
-
-
-1. **Selecting Data**
-- Practice with COUNT()
-- SELECT DISTINCT
