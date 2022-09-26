@@ -234,3 +234,8 @@ FROM films
 WHERE release_year BETWEEN 2000 AND 2012;
 
 
+-- Calculate the average budget rounded to the thousands
+
+SELECT ROUND(AVG(budget), -3) AS avg_budget_thousands
+FROM films;
+
