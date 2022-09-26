@@ -239,3 +239,18 @@ WHERE release_year BETWEEN 2000 AND 2012;
 SELECT ROUND(AVG(budget), -3) AS avg_budget_thousands
 FROM films;
 
+
+-- Calculate the title and duration_hours from films
+SELECT title, (DURATION / 60.0) AS duration_hours
+FROM films;
+
+
+-- Calculate the percentage of people who are no longer alive
+SELECT COUNT(deathdate) * 100.0 / COUNT(*) AS percentage_dead
+FROM people;
+
+
+-- Find the number of decades in the films table
+SELECT (MAX(release_year) - MIN(release_year)) / 10.0 AS number_of_decades
+FROM films;
+
